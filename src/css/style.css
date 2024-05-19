@@ -2,6 +2,9 @@ p{
     margin-block-start: 0;
     margin-block-end: 0;
 }
+a{
+    text-decoration: none;
+}
 html, body {
     height: 99%;
     margin: 0;
@@ -13,9 +16,8 @@ html, body {
 
 body {
     color: white;
-    background-color: #0E0E0A;
+    background-color: #212121;
 }
-
 main {
     display: flex;
     flex-direction: column;
@@ -60,13 +62,13 @@ main {
 }
 #text_user{
     height: 50px;
+    background: #2f2f2f;
     border-radius: 15px;
-    background: #ffffff10;
     flex: 1;
-    color: white;
+    color: #ececec;
     text-indent: 10px;
     font-size: 18px;
-    border: 2px solid rgba(255, 255, 255, 0.255);
+    border: none;
     font-family: sans-serif;
     font-weight: 400;
     width: 600px;
@@ -74,12 +76,11 @@ main {
 }
 #text_user:focus{
     outline: none;
-    border: 2px solid white;
 }
 #send_user_text{
     background: none;
-    border: 1px solid rgb(255, 255, 255);
     border-radius: 10px;
+    border: none;
     position: absolute;
     opacity: 1;
     margin-right: 20px;
@@ -106,10 +107,17 @@ main {
 }
 #user_text{
     display: flex;
-    flex-direction: column;
     gap: 10px;
+    justify-content: flex-end;
     font-family: sans-serif;
     font-size: 20px;
+}
+#user_text p{
+    padding: 10px;
+    border-radius: 5px;
+    background: rgba(47, 47, 47, 0.65);
+    backdrop-filter: blur(5.5px);
+    max-width: 80%;
 }
 .user_text-one p{
     font-size: 20px;
@@ -135,21 +143,24 @@ main {
 }
 #hello{
     display: flex;
-    flex-direction: column;
+    align-items: center;
     gap: 10px;
     font-family: sans-serif;
     font-size: 20px;
+}
+#hello p{
+    padding: 10px;
+    border-radius: 5px;
+    background: rgba(47, 47, 47, 0.65);
+    backdrop-filter: blur(5.5px);
 }
 #gpt_response{
     font-size: 20px;
     font-family: sans-serif;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    border-radius: 5px;
 }
 .bot_text-one{
     display: flex;
-    align-items: center;
     gap: 10px;
     font-weight: bold;
 }
@@ -157,4 +168,8 @@ main {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+#send_document{
+    background: none;
+    border: none;
 }
