@@ -44,6 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
         gpt.v1({
             messages: messages,
             prompt: text,
+            model: "gpt-3.5-turbo",
             markdown: true,
         }, (err, data) => {
             if (err) {

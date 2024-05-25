@@ -1,0 +1,8 @@
+{
+  "linux": {
+    "arch": [
+      "x64"
+    ],
+    "target": "deb"
+  }
+}

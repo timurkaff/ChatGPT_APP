@@ -18,7 +18,7 @@ body {
     color: white;
     background-color: #212121;
 }
-main {
+main{
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -45,10 +45,15 @@ main {
     display: flex;
     align-items: center;
     background: none;
-    border: 1px solid white;
+    border: none;
+    background: rgba(0, 0, 0, 0.30);
     border-radius: 10px;
-    padding: 8px;
+    padding: 10px;
     cursor: pointer;
+    transition: 0.2s ease-in;
+}
+#new_chat:hover{
+    transform: scale(1.1);
 }
 .id-text-send-user{
     display: flex;
@@ -114,7 +119,7 @@ main {
 }
 #user_text p{
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
     background: rgba(47, 47, 47, 0.65);
     backdrop-filter: blur(5.5px);
     max-width: 80%;
@@ -152,12 +157,17 @@ main {
     padding: 10px;
     border-radius: 5px;
     background: rgba(47, 47, 47, 0.65);
-    backdrop-filter: blur(5.5px);
 }
 #gpt_response{
     font-size: 20px;
     font-family: sans-serif;
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(47, 47, 47, 0.65);
+    max-width: fit-content;
 }
 .bot_text-one{
     display: flex;

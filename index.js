@@ -13,7 +13,7 @@ function createWindow () {
 
   win.loadFile('main.html').then(() => {
     win.webContents.openDevTools();
- });
+  });
 
   win.setMenuBarVisibility(false);
 }
